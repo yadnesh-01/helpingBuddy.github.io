@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>HelpingBuddy/AnimalShelter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Taviraj&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style3.css">
+    <style>
+
+    .button-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+    .button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color:#e5989b;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #financialImage {
+    
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    background-image: url("qr.jpg");
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center; /* Center the image */
+    display: none;
+
+        
+    }
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        display: none;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+    }
+    button.check-availability {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button.check-availability:hover {
+        background-color: #b7e4c7;
+    }
+
+
+</style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="menu-par">
+                <div class="logo-par">
+                    <a href="index.html">
+                        <h2>HelpingBuddy</h2>
+                    </a>
+                </div>
+              
+                <div class="nav">
+                    <ul>
+                        <li><a class="menu-hover" href="index1.html">Home</a></li>
+                        <li><a class="menu-hover" href="findrecipient.html">Find Recipients</a></li>
+                        <li><a class="menu-hover" href="ash.html">Appointment </a></li>
+                        <li><a class="menu-hover" href="index1.html">Gallery</a></li>
+                        <li><a class="menu-hover" href="abtus.html">About us</a></li>
+                        <li><a class="menu-hover" href="conus.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+<body><section>
+        <div class="button-container">
+        
+            <button class="button" onclick="showFinancialImage()">Financial</button>
+            <button class="button" onclick="showFoodForm()">Food</button>
+        </div>
+
+        <div id="financialImage">
+            <img src="qr.jpg" alt="Financial Image" height="400px" width="400px" align="center">
+        </div>
+
+        <form id="foodForm" action="check.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" maxlength="50" size="50" height="200px" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" maxlength="50" size="50" height="200px" required>
+        
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
+        
+            <label for="time">Time:</label>
+            <select id="time" name="time" required>
+                <option value="morning">Morning</option>
+                <option value="evening">Evening</option>
+            </select><br>
+        
+            <input type="submit" name="submit" value="Check Availability">
+        </form>
+        
+
+        
+        <script>
+            function showFinancialImage() {
+                document.getElementById('financialImage').style.display = 'block';
+                document.getElementById('foodForm').style.display = 'none';
+            }
+
+            function showFoodForm() {
+                document.getElementById('financialImage').style.display = 'none';
+                document.getElementById('foodForm').style.display = 'block';
+            }
+
+            function submitFoodForm() {
+                // Add logic to check availability for food
+                var date = document.getElementById('date').value;
+                var time = document.getElementById('time').value;
+                console.log('Checking availability for:', date, time);
+            }
+        </script>   
+        </section>
+</body>
+     <footer>
+        <div class="container">
+            <div class="footer-par">
+                <div class="footer-1 ">
+                    <h3 class="footer-logo-h">HelpingBuddy</h3>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3></h3>
+                    <ul>
+                        <li><a href="https://ndma.gov.in/">NDMA</a></li>
+                        <li><a href="https://www.ndrf.gov.in/">NDRF</a></li>
+                        <li><a href="https://mahadish.in/disaster_management">Maharashtra SDMS</a></li>
+                        <li><a href="https://www.mahapolice.gov.in/">Maharashtra Police</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3>Donate For</h3>
+                    <ul>
+                        <li><a href="dsa.html">Disaster Suffering Area</a></li>
+                        <li><a href="oah.html">Old age Home</a></li>
+                        <li><a href="orphan.html">Orphan Age</a></li>
+                        <li><a href="tribal.html">Tribal Schools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3>Find Near You</h3>
+                    <ul>
+                        <li><a href="fooddonations.html">Food Donations</a></li>
+                        <li><a href="shelters.html">Shelters</a></li>
+                        <li><a href="goshala.html">Goshala</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3>Need Help?</h3>
+                    <ul>
+                        <li><a href="conus.html">Contact Us</a></li>
+                        <li><a href="abtus.html">About HelpingBuddy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 Modified by HelpingBuddy</p>
+     </footer>
+</body>
+</html>
