@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpingBuddy/FindRecipient</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Taviraj&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\style2.css">
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<style>
+     .form-container {
+            background-image: url(loc.webp);
+            padding: 0px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #imag {
+        border: 3px solid black;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        width: 200px;
+        height: 200px;
+    }
+  
+        
+</style>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="menu-par">
+                <div class="logo-par">
+                    <a href="index.html">
+                        <h2>HelpingBuddy</h2>
+                    </a>
+                </div>
+              
+                <div class="nav">
+                    <ul>
+                        <li><a class="menu-hover" href="index1.html">Home</a></li>
+                        <li><a class="menu-hover" href="findrecipient.html">Find Recipients</a></li>
+                        <li><a class="menu-hover" href="ash.html">Appointment </a></li>
+                        <li><a class="menu-hover" href="index1.html">Gallery</a></li>
+                        <li><a class="menu-hover" href="abtus.html">About us</a></li>
+                        <li><a class="menu-hover" href="conus.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+<body style="background-image: url('loc.webp');"><center>
+    <section>
+        <div class="form-container">
+            <h2>Donation Form</h2>
+            <form id="redirectForm" action="donation.php" method="post" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" maxlength="50" size="50" height="200px" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" maxlength="50" size="50" height="200px" required>
+            
+                <label for="state">Select State:</label>
+                <select id="state" name="state">
+                    <option value="null">State</option>
+                    <option value="maharashtra">Maharashtra</option>
+                </select>
+            
+                <label for="district">Select District:</label>
+                <select id="district" name="district">
+                    <option value="kolhapur">Kolhapur</option>
+                    <option value="sangli">Sangli</option>
+                    <option value="solapur">Solapur</option>
+                </select>
+            
+                <label for="institution">Select Institution:</label>
+                <select id="institution" name="institution">
+                    <option value="Orphanage">Orphanage</option>
+                    <option value="Oldage">Oldage Home</option>
+                </select>
+            
+                <label for="selectOption">Select a donation:</label>
+                <select id="selectOption">
+                    <option value="">Select Page</option>
+                    <option value="Financial">Financial</option>
+                </select>
+                <div id="outbox">
+                    <h3>Donate us </h3>
+                    <img src="qr.jpg" alt="QR code for payment" id="imag">
+                    <br>
+                    <div class="upload">
+                            <br>
+                            <label for="11"> Enter UTR number </label>
+                            <input type="textarea" name="UTR" placeholder="Enter UTR number"> 
+                            <br> <br>
+                            <input type="submit" name="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+              
+        </form>
+    </div>
+    
+    </section>
+    </center>   
+       <!-- Footer Starts-->
+       <footer>
+        <div class="container">
+            <div class="footer-par">
+                <div class="footer-1 ">
+                    <h3 class="footer-logo-h">HelpingBuddy</h3>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3></h3>
+                    <ul>
+                        <li><a href="https://ndma.gov.in/">NDMA</a></li>
+                        <li><a href="https://www.ndrf.gov.in/">NDRF</a></li>
+                        <li><a href="https://mahadish.in/disaster_management">Maharashtra SDMS</a></li>
+                        <li><a href="https://www.mahapolice.gov.in/">Maharashtra Police</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3>Donate For</h3>
+                    <ul>
+                        <li><a href="dsa.html">Disaster Suffering Area</a></li>
+                        <li><a href="oah.html">Old age Home</a></li>
+                        <li><a href="orphan.html">Orphan Age</a></li>
+                        <li><a href="tribal.html">Tribal Schools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3>Find Near You</h3>
+                    <ul>
+                        <li><a href="fooddonations.html">Food Donations</a></li>
+                        <li><a href="shelters.html">Shelters</a></li>
+                        <li><a href="goshala.html">Goshala</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3>Need Help?</h3>
+                    <ul>
+                        <li><a href="abtus.html">About HelpingBuddy</a></li>
+                        <li><a href="conus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 Modified by HelpingBuddy</p>
+    </footer>
+</body>
+</html>

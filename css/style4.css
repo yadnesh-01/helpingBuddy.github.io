@@ -1,0 +1,172 @@
+/* Conmmon Classes */
+.container1{
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Gallery Section */
+section#gallery-s4{
+    margin: 100px 0px;
+}
+.gallery-item-s4 img{
+    width: 240px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.filter-gal-par-s4{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.gallery-item-s4 img:hover{
+    transform: scale(1.1,1.1);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    opacity: 0.7;
+}
+.gallery-items4{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.abtus-info {
+    flex: 1;
+    padding: 20px;
+}
+section1.content{
+    background-color: rgb(100, 108, 111);
+}
+
+/* FOunders data and Contact us */
+
+  .photo-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .photo-card {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .photo-card img {
+    width: 280px; /* Set the desired width for your images */
+    height: 350px; /* Set the desired height for your images */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .caption {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .contact-details {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .contact-links {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact-link {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Contact us form and data */
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+form {
+    max-width: 400px;
+    margin-bottom: 20px;
+    align-self: center; /* Aligns the form to the center horizontally */
+}
+.contact-details-as {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.contact-info,
+.address {
+    max-width: 200px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 170px;
+}
+button:hover {
+    background-color: #45a049;
+}
+.address {
+    margin-top: 10px;
+    margin-left: 1000px;
+}
+
+/* For the contact us form */
+
+.contact-form {
+    width: 300px;
+    margin: 0 auto;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+}
+.form-group button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.form-group button:hover {
+    background-color: #45a049;
+}
+.map {
+    width: 100%;
+    height: 400px;
+}
