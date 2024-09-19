@@ -5,3 +5,6 @@
 #Donations  either be financial or the food donation
 #Financial donation can be done directly using QR code provided at web page
 #for food donation user has to book an appointment to reduce the wastage of food ue to multiple food donations at same day
+
+
+##Documentation and ppt related to this project are also uploaded n this repository
